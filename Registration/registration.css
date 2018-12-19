@@ -1,15 +1,18 @@
 h1{
 
   color:rgb(52, 154, 221);
-  text-align:center
+  text-align:center;
   width: 10%;
   padding: 10px;
 }
 
 body{
-
+text-align-last:left;
     background-image:url("university of mumbai.jpeg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     background-color: rgb(107, 107, 114);
+}
+.buttons{
+padding: 10px 20px;
 }
