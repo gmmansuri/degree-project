@@ -1,90 +1,80 @@
 <!Doctype !DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>registration form</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <link rel="stylesheet" href="registration.css">
 </head>   
 
-
-
-     <body style="background-color: rgb(109, 116, 116)">
+     <body >
 
          <!--this is for center alignment-->
-          <center > <b>REGISTRATION FORM</b></center>  
-          <br>
-          <center>
-       <image  src="university of mumbai.jpeg" width="200" haight="150" >
-          </center>
+         <h1>REGISTRATION FORM</h1>
+       
         <br>
 
         <!--form tag contain diffrent type of input like name qualification etc-->
 
        <form action="">
-            <b> First Name    : </b>  <input type="text" value="">
-       </form> 
-       <br> 
-        <form action="">
-            <b>Last Name     : </b>  <input  type="text" value="">
-        </form>
-       <br> 
+            <div>
+               <label >First name:</label>
+               <input type="text">
+
+            </div>
+            <br>
+            <div>
+                <label >Last name:</label>
+                <input type="text">
+ 
+             </div>
+             <br>
 
      <!--this is containing selectebale option -->
-     <form action="">
-            <b>Qalification :</b>   
-            <select name = "dropdown">
-                <option value = "B.E" selected>B.E</option>
-                <option value = "Bsc">Bsc</option>
-                <option value = "B.A">B.A</option>
-                <option value = "Bcom">Bcom</option>
-             </select>
-        </form> 
+     <div>
+        <label >Qualification:</label>
+        <select name="qualification">
+            <option value="B.E/B.tech">B.E/B.tech</option>
+            <option value="B.COM">B.COM</option>
+            <option value="B.Sc">B.Sc</option>
+            <option value="BDS">BDS</option>
+            </select>
+      </div>
+       <br>
+      
+       <div>
+            <label >Stream:</label>
+            <select >
+            <option value="EXTC">EXTC</option>
+            <option value="IT">IT</option>
+            <option value="COMS">COMS</option>
+            <option value="BANKING">BANKING</option>
+            <option value="MEDICAL">MEDICAL</option>
+             </select>  
 
-<br> 
+         </div>
+         <br>
 
-    <form action="">
 
-       <b> Stream : </b>
-      <select name = "dropdown">
-        <option value = "EXTC" selected>EXTC</option>
-        <option value = "IT">IT</option>
-        <option value = "COMS">COMS</option>
-      </select>
-       
-     </form>
+        </div>
 
-<br> 
+         <div>
+            <label >Date of birth:</label>
+            <input type="date">
 
-     <form action="">
-         <b> Contact Number: </b>
-         <input type="text" value="">
-
-     </form>
-
-<br>
-    <form action="">
-        <b> address:</b>
-        <textarea></textarea>
-    </form>
-
-    <form action="">
-            <b> date of birth: </b>
-            <input type="date" value="">
-   
-        </form>
-        <form action="">
-            <b> Email:   </b>
-            <input type="text" value="">
-        </form>
+         </div>
+         <br>
+         <div>
+                <label >Email:</label>
+                <input type="email">
+ 
+             </div>
 
     <br>
-     <center>   
-        <button type="button" onclick="alert('Data saved!')">Submit </button>
-     </center>
+    
+    <div>
+            <button type="button" onclick=" alert('data is saved')"> click me !</button>
 
+         </div>
+         </form>
      </body>
   
 </html>
