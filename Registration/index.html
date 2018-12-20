@@ -3,27 +3,34 @@
 <head>
     <title>registration form</title>
     <link rel="stylesheet" href="registration.css">
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>   
 
      <body >
-
-         <!--this is for center alignment-->
-         <h1>REGISTRATION FORM</h1>
-       
-        <br>
+<div class="container-fluid">
+          <!--this is for center alignment-->
+         <div class="panel panel-default">
+                <div class="panel-default">REGISTRATION FORM </div>
+               
+              </div>
+         <br>
 
         <!--form tag contain diffrent type of input like name qualification etc-->
 
        <form action="">
             <div>
                <label >First name:</label>
-               <input type="text">
+               <input type="text" required>
 
             </div>
             <br>
             <div>
                 <label >Last name:</label>
-                <input type="text">
+                <input type="text" required>
  
              </div>
              <br>
@@ -31,7 +38,7 @@
      <!--this is containing selectebale option -->
      <div>
         <label >Qualification:</label>
-        <select name="qualification">
+        <select name="qualification" required>
             <option value="B.E/B.tech">B.E/B.tech</option>
             <option value="B.COM">B.COM</option>
             <option value="B.Sc">B.Sc</option>
@@ -42,7 +49,7 @@
       
        <div>
             <label >Stream:</label>
-            <select >
+            <select required >
             <option value="EXTC">EXTC</option>
             <option value="IT">IT</option>
             <option value="COMS">COMS</option>
@@ -53,34 +60,68 @@
          </div>
          <br>
 
-
-        </div>
-
          <div>
             <label >Date of birth:</label>
-            <input type="date">
+            <input type="date" required>
 
          </div>
          <br>
          <div>
                 <label >Email:</label>
-                <input type="email">
+                <input type="email" required>
  
              </div>
 
     <br>
     <div>
             <label >Contact number:</label>
-            <input type="number">
+            <input type="number" required>
 
          </div>
-    
-    <div class="buttons">
-            <button type="button" onclick=" alert('data is saved')"> save</button>
-            <button type="button" onclick="">sign in</button>
+    <br>
+
+         <div button type="button" class="btn btn-primary" ></button>
+          
+            <button type="button" class="btn btn-success">saved <span class="badge">7</span></button>
+           
+            <button type="button" class="btn btn-warning">Warning <span class="badge">3</span></button>
+            <button type="button" class="btn btn-danger">Danger<span class="badge">2</span></button>
+            
+         </div>
+         <br>
+         <!--
+         <div class="">
+                <img src="education.jpg" class="img-circle fa-pull-right"  alt="" width="304" height="236" > 
 
          </div>
+         -->
+         <br>
+         <div>
+                <a href="#">News <span class="badge">5</span></a><br>
+                <a href="#">Comments <span class="badge">10</span></a><br>
+                <a href="#">Updates <span class="badge">2</span></a>
+
+         </div>
+         <br>
+         <div class="progress">
+                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40"
+                aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                  40% Completed registration
+                </div>
+              </div>
+              <div class="jumbotron" >
+                    <div class="list-group">
+                            <a href="https://www.wohlig.com/" class="list-group-item">About us</a>
+                            <a href="#" class="list-group-item">Contact us</a>
+                            <a href="#" class="list-group-item">Product</a>
+                          </div>
+
+              </div>
+
+
+
          </form>
+        </div>
      </body>
   
 </html>
